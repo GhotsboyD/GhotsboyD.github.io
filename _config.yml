@@ -1,8 +1,8 @@
 ﻿# Basic
 title: Dc Future
-subtitle: aaa
+subtitle: 岁月绵长，要对爱的事不遗余力
 welcome_message: 
-description: aaa
+description: 生活分享，技术交流，欢迎来访
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -17,12 +17,12 @@ cover_color: red
 
 # The blog button should not be removed.
 blog_button:
-    title: aaa
+    title: 博客
     description: Visit blog
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: 简历, description: My Projects, url: 'http://project.onevcat.com'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination

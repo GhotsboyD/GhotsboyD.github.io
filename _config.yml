@@ -3,11 +3,11 @@ title: Dc Future
 subtitle: 岁月绵长，要对爱的事不遗余力
 welcome_message: 
 description: 生活分享，技术交流，欢迎来访
-creator: <a href="http://onev.cat">@onevcat</a>
+creator: 
 
-url: "http://vno.onevcat.com"
 
-permalink: /:year/:month/:title/
+
+
 
 # Format
 highlighter: rouge
@@ -18,12 +18,13 @@ cover_color: red
 # The blog button should not be removed.
 blog_button:
     title: 博客
-    description: Visit blog
+    description: 博客访问
 
 # Navigation buttons in the front page.
 nav:
-    - {title: 简历, description: My Projects, url: 'http://project.onevcat.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+    - {title: 简历, description: 个人简历, url: '/personal_resume'}
+    - {title: 兴趣, description: A button, url: '/interesting'}
+    - {title: 生活, description: A button, url: '/interesting'}
 
 # Pagination
 plugins: [jekyll-paginate]
@@ -37,7 +38,7 @@ comment:
     
 # Social
 social:
-    weibo: onevcat
+    weibo: dc
     github: onevcat
     twitter: onevcat
     gplus: 107108267983477358170

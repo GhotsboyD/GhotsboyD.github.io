@@ -1,8 +1,8 @@
 ﻿# Basic
-title: Dc Future
+title: Dc's Blog
 subtitle: 岁月绵长，要对爱的事不遗余力
-welcome_message: 
-description: 生活分享，技术交流，欢迎来访
+welcome_message: 生活分享，技术交流，欢迎来访
+description: 
 creator: 
 
 
@@ -24,7 +24,7 @@ blog_button:
 nav:
     - {title: 简历, description: 个人简历, url: '/personal_resume'}
     - {title: 兴趣, description: A button, url: '/interesting'}
-    - {title: 生活, description: A button, url: '/interesting'}
+    - {title: 生活, description: A button, url: '/Life'}
 
 # Pagination
 plugins: [jekyll-paginate]
@@ -38,9 +38,8 @@ comment:
     
 # Social
 social:
-    weibo: dc
-    github: onevcat
-    twitter: onevcat
+    github: GhotsboyD
+    twitter: 
     gplus: 107108267983477358170
     mail: onev@onevcat.com
 

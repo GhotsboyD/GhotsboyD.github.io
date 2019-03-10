@@ -1,7 +1,7 @@
 ﻿# Basic
 title: Dc's Blog
 subtitle: 岁月绵长，要对爱的事不遗余力
-welcome_message: 生活分享，技术交流，欢迎来访
+welcome_message: 生活分享，技术交流
 description: 
 creator: 
 
@@ -20,11 +20,13 @@ blog_button:
     title: 博客
     description: 博客访问
 
+
+
 # Navigation buttons in the front page.
 nav:
-    - {title: 简历, description: 个人简历, url: '/personal_resume'}
-    - {title: 兴趣, description: A button, url: '/interesting'}
-    - {title: 生活, description: A button, url: '/Life'}
+    - {title: 介绍, description: 个人介绍, url: '/personal_resume'}
+    - {title: 兴趣, description: 兴趣爱好, url: '/interesting'}
+   - {title: 生活, description: 生活环境, url: '/Life'}
 
 # Pagination
 plugins: [jekyll-paginate]

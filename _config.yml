@@ -1,8 +1,8 @@
 # Basic
 title: Dc Future
-subtitle: 岁月绵长，要对爱的事不遗余力
+subtitle: aaa
 welcome_message: 
-description: 个人生活分享，技术交流，欢迎来访
+description: aaa
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -17,7 +17,7 @@ cover_color: red
 
 # The blog button should not be removed.
 blog_button:
-    title: 博客
+    title: aaa
     description: Visit blog
 
 # Navigation buttons in the front page.

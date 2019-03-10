@@ -4,7 +4,11 @@ name: 陈帝的博客|Dc's Blog
 subtitle: 岁月绵长，要对爱的事不遗余力
 welcome_message: 生活分享，技术交流，欢迎来访
 description: 
-creator: 
+creator: <a href="https://onev.cat">@onevcat</a>
+
+url: "https://onevcat.com"
+
+permalink: /:year/:month/:title/
 
 
 

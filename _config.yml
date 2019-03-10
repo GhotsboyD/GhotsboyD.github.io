@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: ghotsboy@outlook.com
 description: "Dc 生活空间记录，技术、爱好交流"
 keyword: "Dc 生活 记录"
-url: "https://huangxuan.me"              # your host, for absolute URL
+# url: "https://huangxuan.me"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.

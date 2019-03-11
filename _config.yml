@@ -24,7 +24,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: 介绍, description: 自我介绍, url: '/#intro'}
+    - {title: 介绍, description: 自我介绍, url: '/intro'}
     - {title: 兴趣, description: 兴趣爱好, url: '/interesting'}
     - {title: 生活, description: 生活环境, url: '/Life'}
 

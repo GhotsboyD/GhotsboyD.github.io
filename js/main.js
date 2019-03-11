@@ -1,4 +1,4 @@
-﻿$(document).ready(function() {
+$(document).ready(function() {
 
   $('a.blog-button').click(function() {
     // If already in blog, return early without animate overlay panel again.

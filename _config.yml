@@ -1,13 +1,13 @@
-# Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="http://onev.cat">@onevcat</a>
+﻿# Basic
+title: Dc's Blog
+subtitle: 岁月绵长，要对爱的事不遗余力
+welcome_message: 生活分享，技术交流
+description: 
+creator: 
 
-url: "http://vno.onevcat.com"
+url: "https://ghotsboyd.github.io/"
 
-permalink: /:year/:month/:title/
+
 
 # Format
 highlighter: rouge
@@ -17,13 +17,16 @@ cover_color: red
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
+    title: 博客
+    description: 博客访问
+
+
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+    - {title: 介绍, description: 自我介绍, url: '/intro'}
+    - {title: 兴趣, description: 兴趣爱好, url: '/interesting'}
+    - {title: 生活, description: 生活环境, url: '/Life'}
 
 # Pagination
 plugins: [jekyll-paginate]
@@ -37,9 +40,8 @@ comment:
     
 # Social
 social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
+    github: GhotsboyD
+    twitter: 
     gplus: 107108267983477358170
     mail: onev@onevcat.com
 

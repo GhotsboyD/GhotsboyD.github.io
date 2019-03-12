@@ -52,7 +52,7 @@ $(document).ready(function() {
   
   
   //intro-button
-  $('a.blog-button').click(function() {
+  $('a.intro-button').click(function() {
     // If already in blog, return early without animate overlay panel again.
     if (location.hash && location.hash == "/intro") return;
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;

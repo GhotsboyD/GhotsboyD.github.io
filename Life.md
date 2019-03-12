@@ -5,159 +5,1172 @@ date: 2018-11-16 11:32:54.000000000 +09:00
 tags: 能工巧匠集
 ---
 
-工欲善其事，必先利其器。作为创造者，合手的工具可以以倍速提高效率。对于程序员来说，特别是对于在 macOS 上做开发的程序员来说，我们有非常多的 app 选择。
-同时，也有很多朋友会好奇我日常做开发时都使用一些什么样的 app。趁这个机会整理一下自己所偏好使用的一些工具。
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.19" />
+  <meta name="author" content="王 巍">
+  <meta name="description" content="iOS 开发者">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  
+
+  <link rel="alternate" href="https://onev.cat/index.xml" type="application/rss+xml" title="简历 - 王巍">
+  <link rel="feed" href="https://onev.cat/index.xml" type="application/rss+xml" title="简历 - 王巍">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://onev.cat/zh/">
+
+  
+
+  <title>简历 - 王巍</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/zh/">简历 - 王巍</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/zh/#about" data-target="#about">
+            
+            <span>主页</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/zh/#projects_selected" data-target="#projects_selected">
+            
+            <span>项目</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/zh/#publications_selected" data-target="#publications_selected">
+            
+            <span>出版</span>
+          </a>
+        </li>
 
-[数码荔枝](https://www.lizhi.io/)作为国内有名的软件经销商，为我们争取到了很多中国区特供的优惠价格，文中部分工具也提供了优惠合作的购买链接，您可以先
-[拿到优惠券](https://partner.lizhi.io/onevcat/cp)，然后以中国地区的专供价格进行购买，通常会比到官网购买便宜很多。通过这样购买的软件我可以拿到一定的
-分成，可能可以 cover 这个站点的运营成本。如果您正好需要购买某个 app 的话，还请不妨考虑这种方式。先谢谢啦！
+        
+        
 
-> 「优惠链接」中写的价格是本文写作时在数码荔枝商店中的售价，并不包含优惠券的折扣。这个价格可能会有变动，还请留意。
+        
+
+        <li class="nav-item">
+          <a href="/zh/#talks" data-target="#talks">
+            
+            <span>演讲</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/zh/#experience" data-target="#experience">
+            
+            <span>经历</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/zh/#contact" data-target="#contact">
+            
+            <span>联系</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/./" data-target="../">
+            
+            <span>English</span>
+          </a>
+        </li>
+
+        
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<span id="homepage" style="display: none"></span>
+
+
+
+  
+  
+  <section id="about" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <div class="col-xs-12 col-md-4">
+    <div id="profile">
+
+      
+      <div class="portrait" itemprop="image"
+           style="background-image: url('/img/portrait.jpg');">
+      </div>
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">王 巍</h2>
+        <h3 itemprop="jobTitle">iOS 开发者</h3>
+        
+        <h3 itemprop="worksFor">
+          <a href="https://onevcat.com" target="_blank">
+          OneV&#39;s Den (@onevcat)
+          </a>
+        </h3>
+        
+      </div>
+
+      <ul class="social-icon" aria-hidden="true">
+        
+        
+        <li>
+          <a href="mailto:onev@onevcat.com" target="_blank">
+            <i class="fa fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="//twitter.com/onevcat" target="_blank">
+            <i class="fa fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="//weibo.com/onevcat" target="_blank">
+            <i class="fa fa-weibo big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a href="//github.com/onevcat" target="_blank">
+            <i class="fa fa-github big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-8" itemprop="description">
+
+    
+
+<h1 id="概要">概要</h1>
+
+<p>王巍现在是一名专注于 iOS 的职业开发者。他拥有对于 Swift，Objective-C 以及网络程序设计方面的深厚知识及多年实践经验。他将这些技术运用于创建应用程序和通用框架等解决方案，其中很多都被用户喜爱，并被开发者社区广泛使用来构建其他软件。同时，他是 <a href="https://objccn.io" target="_blank">ObjC 中国</a>组织的发起人和领导者，为将最佳 iOS 实践和进阶技术引入中国而不断努力。</p>
+
+<p>作为两个可爱孩子的父亲，王巍同时也热爱旅游，阅读以及摄影。他总是乐于尝试新鲜事物，并且持续地从这些新鲜事物中进行学习。</p>
+
+<p>现在，王巍是一名在 <a href="https://line.me/" target="_blank">LINE</a> 工作的高级软件工程师。</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-sm-5">
+        <h3>兴趣爱好</h3>
+        <ul class="ul-interests">
+          
+          <li>移动互联网领域</li>
+          
+          <li>Swift 程序设计</li>
+          
+          <li>开源软件开发</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-sm-7">
+        <h3>教育经历</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fa fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">微电子，工学硕士学位, 2012</p>
+              <p class="institution">清华大学</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fa fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">电子工程，工学学士学位, 2009</p>
+              <p class="institution">清华大学</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="projects_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>精选项目</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    <div class="project-toolbar">
+      <div id="filters">
+        <div class="btn-toolbar">
+          <div class="btn-group">
+          
+            <a href="#" data-filter="*" class="btn btn-primary btn-large active">全部</a>
+          
+            <a href="#" data-filter=".iosapp" class="btn btn-primary btn-large">iOS 应用</a>
+          
+            <a href="#" data-filter=".framework" class="btn btn-primary btn-large">框架</a>
+          
+            <a href="#" data-filter=".web" class="btn btn-primary btn-large">网站</a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div id="container-projects" class="row isotope">
+
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item framework">
+        <div class="card">
+          
+          <a href="https://github.com/line/line-sdk-ios-swift" title="" class="card-image hover-overlay"
+             target="_blank">
+            <img src="/img/line-sdk.png" alt="" class="img-responsive">
+          </a>
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/line/line-sdk-ios-swift" target="_blank">LINE SDK</a></h4>
+            <div class="card-desription">
+              <p>为在 iOS app 中实现和使用 LINE API 提供便捷快速的方式。我从最初开始，以优雅的设计为指导，以稳定的架构为原则，完成了所有实现。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item framework">
+        <div class="card">
+          
+          <a href="https://github.com/onevcat/kingfisher" title="" class="card-image hover-overlay"
+             target="_blank">
+            <img src="/img/kingfisher.png" alt="" class="img-responsive">
+          </a>
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/onevcat/kingfisher" target="_blank">Kingfisher</a></h4>
+            <div class="card-desription">
+              <p>由纯 Swift 编写的轻量级网络图片下载和缓存框架。Kingfisher 为您的下一个 app 提供更加优秀的图片资源使用、处理及管理功能。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item framework">
+        <div class="card">
+          
+          <a href="https://github.com/onevcat/fengniao" title="" class="card-image hover-overlay"
+             target="_blank">
+            <img src="/img/fengniao.png" alt="" class="img-responsive">
+          </a>
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/onevcat/fengniao" target="_blank">FengNiao</a></h4>
+            <div class="card-desription">
+              <p>一个用来检测并删除 Xcode 项目中无用图片资源的跨平台命令行工具，可以通过项目构建脚本进行集成，并持续保证项目尺寸的精简。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item iosapp">
+        <div class="card">
+          
+          <a href="https://mailmeapp.com" title="" class="card-image hover-overlay"
+             target="_blank">
+            <img src="/img/mailme.png" alt="" class="img-responsive">
+          </a>
+          
+          <div class="card-text">
+            <h4><a href="https://mailmeapp.com" target="_blank">Mail Me</a></h4>
+            <div class="card-desription">
+              <p>一个用来快速且在任意场合给自己发送邮件的 iOS 应用。通过即刻邮件，将你的 iOS 设备用于高效的任务管理、笔记或者信息收集。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item iosapp">
+        <div class="card">
+          
+          <a href="https://live.line.me" title="" class="card-image hover-overlay"
+             target="_blank">
+            <img src="/img/live.jpg" alt="" class="img-responsive">
+          </a>
+          
+          <div class="card-text">
+            <h4><a href="https://live.line.me" target="_blank">LINE LIVE</a></h4>
+            <div class="card-desription">
+              <p>作为 LINE 下一代娱乐入口的视频流媒体直播 app。我在其中担任重要的开发角色，负责包括功能实现，关键指标性能优化等多项工作。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item web">
+        <div class="card">
+          
+          <a href="https://objccn.io" title="" class="card-image hover-overlay"
+             target="_blank">
+            <img src="/img/objccn.png" alt="" class="img-responsive">
+          </a>
+          
+          <div class="card-text">
+            <h4><a href="https://objccn.io" target="_blank">ObjC 中国</a></h4>
+            <div class="card-desription">
+              <p>由我发起，通过中国 iOS 开发者社区驱动的项目。ObjC 中国的目标是将 objc.io 中优秀的期刊文章和图书翻译为中文，并将先进的开发理念介绍给中国开发者。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="projects" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>其他项目</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<p>我同时还创建了以下项目：</p>
+
+<h3 id="vvdocumenter-xcode-https-github-com-onevcat-vvdocumenter-xcode"><a href="https://github.com/onevcat/VVDocumenter-Xcode" target="_blank">VVDocumenter-Xcode</a></h3>
+
+<p><span class="dim">Xcode 插件</span></p>
+
+<p>可以让你在 Xcode 中直接为 Swift 和 Objective-C 创建文档注释的 IDE 插件。从 2016 年起，Apple 基于 VVDocumenter 的实现，为 Xcode 添加了内置集成的文档生成功能。因此该项目及其代码现在已经是 Apple 的一部分，我个人不再继续对其进行维护。</p>
+
+<h3 id="rainbow-https-github-com-onevcat-rainbow"><a href="https://github.com/onevcat/Rainbow" target="_blank">Rainbow</a></h3>
+
+<p><span class="dim">框架</span></p>
+
+<p>让 Swift 开发者愉悦的控制台输出字符串着色。Ranibow 可以为 Swift 命令行工具的输出文本添加文本颜色，背景颜色或者常见样式。该框架可以同时用于 Apple 平台和 Linux 开发，提高终端日志输出和用户交互的体验。</p>
+
+<h3 id="hedwig-https-github-com-onevcat-hedwig"><a href="https://github.com/onevcat/Hedwig" target="_blank">Hedwig</a></h3>
+
+<p><span class="dim">框架</span></p>
+
+<p>用 Swift 轻松地从任意运行终端向任意 SMTP 服务器发送邮件。通过 Hedwig，你可以从 Swift 编写的 Linux 服务器或是 macOS/iOS app 连接到 SMTP 服务器，并请求邮件发送。使用所提供的高层级 API 可以对用户与 SMTP 的交互进行极大简化。</p>
+
+<h3 id="apngkit-https-github-com-onevcat-apngkit"><a href="https://github.com/onevcat/APNGKit" target="_blank">APNGKit</a></h3>
+
+<p><span class="dim">框架</span></p>
+
+<p>APNGKit 是一个 iOS 上加载和显示 APNG 格式图片的高性能框架。它基于带有 APNG 支持的 libpng 进行构建，并使用 Swift 处理图像的解码和再组装。基于 Cocoa Touch 的高层级抽象可以为使用者提供一套易用的 API。APNGKit 让你以前所未有的便利和熟悉的方式，在 iOS 系统中使用更先进的动画图片格式。</p>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="publications_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>精选出版</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    
+    
+    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="row">
+
+    
+
+    <div class="col-md-12">
+      <a href="https://onev.cat/zh/publication/swifter/">
+        <img src="/img/headers/swifter.png" class="pub-banner" itemprop="image">
+      </a>
+    </div>
+    <div class="col-md-12">
+
+    
+
+      <h3 class="article-title" itemprop="name">
+        <p itemprop="url">Swifter - Swift 必备 Tips</p>
+      </h3>
+
+      <div class="pub-abstract" itemprop="text">
+        
+        Swift 是 Apple 在 WWDC 2014 上引入的一门革新性的编程语言，它汲取并借鉴了众多现代编程语言的优点。我本人也参加了 WWDC 2014，并从 Swift 诞生的第一天开始就对其进行学习和研究。在本书中，我们将总结很多 Swift 的使用技巧，它们几乎涵盖了 Swift 的各个重要方面。
+        
+      </div>
+
+      <div class="pub-authors" itemprop="author">
+        
+        王 巍
+        
+      </div>
+
+      <div class="pub-publication">
+        
+        
+        
+      </div>
+
+      <div class="pub-links">
+        
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://swifter.tips">
+  网站
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/swifter-tips/">
+  中文版
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://leanpub.com/swifter-en">
+  英文版
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://item.jd.com/11837385.html">
+  纸质版
+</a>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="publications" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>近期出版</h1>
+    
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    
+    <ul class="fa-ul">
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="name">App 架构</span>
+  <span class="dim">Chris Eidhof, Matt Gallagher, Florian Kugler, 王 巍, 茆 子君, 李 杰</span>
+  <p>
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/app-architecture">
+  中文版
+</a>
+
+</p>
+</li>
+
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="name">集合类型优化</span>
+  <span class="dim">Károly Lőrentey, 王 巍</span>
+  <p>
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/optimizing-collections/">
+  中文版
+</a>
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/optimizing-collections/preview">
+  试读
+</a>
+
+</p>
+</li>
+
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="name">Swift 进阶</span>
+  <span class="dim">Chris Eidhof, Ole Begemann, Airspeed Velocity, 王 巍</span>
+  <p>
 
-## 开发工具
 
-Xcode，JetBrains 全家桶之类的这种大家都需要用的就跳过不说了。下面是几个平时用起来很顺手的和软件开发有关的 macOS app。
 
-### [Code Runner](https://coderunnerapp.com)
 
-![](/assets/images/2018/code-runner.jpg)
 
-[Code Runner](https://coderunnerapp.com) 的作用很类似于 Xcode 的 Playground，它能提供一个快速验证和实验想法的地方，你可以输入各种语言的代码，然后去执行它们，迅速得到结果。我一般用它来验证一些小段的程序，看看结果是否正确。如果没问题的话，再把这些代码复制到实际项目里使用。相比于 Xcode 的 Playground，Code Runner 支持各种杂七杂八的语言 (你可以在官网看到详细的支持列表)，并且为部分语言提供开箱即用的媲美 IDE 的补全和调试支持。
 
-另外，在闲暇时做算法题或者写一些有意思的小东西小脚本的时候，Code Runner 也能帮助我快速开始。值得一提的是，Code Runner 的开发者相当良心，从 version 1 到现在 version 3 的升级，都没有再额外收费。这也是我想把这个 app 放到第一个来介绍的原因。
 
-> VS Code 或者其他一些编辑器也有[插件的方式](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)提供类似 Code Runner 的功能，但是很多时候需要额外的配置，功能上也相较羸弱一些。我个人更愿意选择一个即开即用，节省时间精力，而且确实很优秀的方案。
 
-> [优惠链接 ($14.99 -> ¥99)](https://partner.lizhi.io/onevcat/coderunner)
 
----
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/advanced-swift/">
+  中文版
+</a>
 
-### [Reveal](https://revealapp.com)
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/advanced-swift/preview/">
+  试读
+</a>
 
-![](/assets/images/2018/reveal.jpg)
+<a class="btn btn-primary btn-outline btn-xs" href="http://item.jd.com/12191954.html">
+  纸质版
+</a>
 
-自从 Xcode 加入了 View Debugging 以来，很多朋友会问是不是可以替代 [Reveal](https://revealapp.com)。我个人的经验来说，不能。也许简单一些的界面可以用 Xcode 自带的凑合，但是如果遇到 view 比较多的复杂界面，或者需要在更深层的地方 (比如 layer 或者某些特定属性) 中查找问题的话，Reveal 带来的便利性远超 Xcode。
+</p>
+</li>
 
-几乎如果你有 iOS UI 开发的需求的话，这个工具会为你节省好多小时，换算下来，是一款性价比极高的可以无脑入手的重要工具。
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="name">Core Data</span>
+  <span class="dim">Florian Kugler, Daniel Eggert, 徐 涛, 钱 世家, 王 巍</span>
+  <p>
 
-> [优惠链接 ($59 -> ¥329)](https://partner.lizhi.io/onevcat/reveal)
 
----
 
-### [Flawless](https://flawlessapp.io)
 
-![](/assets/images/2018/flawless.jpg)
 
-这是一个比较小众的工具，它可以把一张图片注入到 iOS 模拟器里，然后以覆盖层或者左右对比的方式，来检查 UI 的位置尺寸颜色等等一系列属性有没有符合要求。对于有设计师出图和对 UI 还原追求比较极致的同学，是很好的工具，可以帮助你真正做到“一个像素都不差”的精致效果。
 
-我之前有一段时间写了很多 UI 的东西，加上日本这边 QA 和设计师都蛮挑剔的，真是会追着一个像素这种问题和你纠缠。这款 app 也帮我省下不少时间来纠结这类问题。但是最近 UI 相对做的比较少，价值就没有那么突出了。
 
-另外，我记得我买的时候一个 license 是 $15，但是好像在写作本文的时候价格变成了 $49，而且只有一年的更新。这相对来说就比较贵了...有兴趣但是嫌贵的同学也可以观望一下。这款 app 还没有国内的经销商。
 
----
 
-### [Charles](https://www.charlesproxy.com)
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/core-data/">
+  中文版
+</a>
 
-![](/assets/images/2018/charles.png)
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/core-data/preview">
+  试读
+</a>
 
-[Charles](https://www.charlesproxy.com) 这个应该不用再多介绍了，老牌的 HTTP proxy 和代理抓包工具，功能十分强大。不管用来检测网络请求和响应，还是中途拦截和修改请求，或者是检测 socket 数据，都可以自由应对。现在开发几乎不可能不和网络打交道，而 Charles 则让网络部分的开发和调试过程变得轻松不少。
+<a class="btn btn-primary btn-outline btn-xs" href="http://item.jd.com/12035112.html">
+  纸质版
+</a>
 
-最近 Charles 也推出了 iOS 版本，可以直接在设备上运行，免去了来回在手机中设置代理的麻烦，也可以让 QA 或者测试的小伙伴直接记录请求。
+</p>
+</li>
 
-> [优惠链接 ($50 -> ¥199)](https://partner.lizhi.io/onevcat/charles)
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="name">函数式 Swift</span>
+  <span class="dim">Chris Eidhof, Florian Kugler, Wouter Swierstra, 陈 聿菡, 杜 欣, 王 巍</span>
+  <p>
 
----
 
-### [Fork](https://git-fork.com)
 
-![](/assets/images/2018/fork.jpg)
 
-我自己是喜欢使用 GUI 来操作 git 仓库的。几乎 99% 的日常 git 操作相对并不复杂，使用 GUI 会更直接一些，也更快一些。特别在遇到冲突，或者想要查找 log 历史的时候，GUI 的优势就相当明显了。我以前的偏好是 [Tower](https://www.git-tower.com/mac)，但是最近 Tower 把收费模式从一次买断改为了按年订阅，而且订阅期满后则不能再继续使用。我认为这不是一个工具 app 应该有的收费模式，也很不喜欢它们把一些卖点功能单独放在更高价的订阅等级里的做法，所以我并没有升级到 Tower 的订阅。作为替代，我尝试了很多其他的 Git GUI，最终选择了 [Fork](https://git-fork.com) 作为替代。
 
-除了在拖拽支持上还有一点欠缺以外，它能够很好地满足我对一个优秀 Git GUI 的一切幻想。特别它还内置了解决冲突的界面和对比工具，很好地简化了 merge 的流程。界面和交互上也经过了精心打磨，作为一款个人开发者的作品，能有这样的高度和完成度非常不易。
 
-Fork 现在还在 beta 中，但是软件质量可以说远远超出了 beta 的名字，而且作者也承诺今后不会使用订阅制收费。应该是正式 release 我会第一时间购买的 app。
 
----
 
-### [Paw](https://paw.cloud)
 
-![](/assets/images/2018/paw.jpg)
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/functional-swift/">
+  中文版
+</a>
 
-在写网络代码的时候，我比较倾向于先动手把网络部分的请求都发一遍，先调通，确认服务器端的请求返回都没问题后，再开始开始着手在 app 里实现相关内容。这时候，一个能帮助保存 API 请求和相关参数的工具就很有用。[Paw](https://paw.cloud) 就是这样的一个工具：记录保存 token，按照不同配置参数来生成网络请求，将请求的内容和返回结果共享给 server 端的小伙伴，甚至最后按照网络请求的配置直接生成代码 (虽然这些代码不太可能直接用在项目了...)。
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/functional-swift/preview">
+  试读
+</a>
 
-Paw 给了我一个“一站式”的不用自己动脑筋去实现的 HTTP Client 和 API 管理的方式。如果记录保持完整的话，有时候甚至可以作为 server 的状态和返回的测试来运行，在遇到网络方面的疑难杂症时可以帮助快速定位问题所在。
+<a class="btn btn-primary btn-outline btn-xs" href="http://item.jd.com/12029176.html">
+  纸质版
+</a>
 
-> [优惠链接 ($49.99 -> ¥249)](https://partner.lizhi.io/onevcat/paw)
+</p>
+</li>
 
----
+      
+      <li itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa-li fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="name">Swifter - Swift 必备 Tips</span>
+  <span class="dim">王 巍</span>
+  <p>
 
-### [CodeKit](https://codekitapp.com)
 
-![](/assets/images/2018/codekit.jpg)
 
-这是一个前端开发的工具，我主要用它来快速将一些像 Sass 或者 TypeScript 的东西编译成相应的 CSS 和 JavaScript 等。通常在一个项目里，这部分内容都应该由类似 Gulp 或者 Webpack 或者 Babel 之类的工具来做。但是我经常会发现，因为我并不是一个专业的 Web 前端开发，很多时候只是在现有的东西上修修改改。通常写对应的任务和配置，以及从头开始架设开发环境所花的时间，会比实际做事的时间还长。CodeKit 解决了这个问题，它提供了一套不太需要配置的工作流，把前端语言编译，asset 压缩等工作自动化，然后提供了 Hot Reload 的 server 来监视这些变化。
 
-基本上把之前需要自行配置的一系列所谓 modern Web 开发的方式，进行了简化和封装，让不那么正规的项目也可以从正规的工作流中受益的一个工具。
 
-> [优惠链接 ($34 -> ¥209)](https://partner.lizhi.io/onevcat/codekit)
 
----
 
-### [TablePlus](https://tableplus.io/)
 
-![](/assets/images/2018/tableplus.png)
 
-一个数据库可视化的 GUI 工具，可以方便地对 MySQL，PostgreSQL，Redis 和其他各种数据库进行操作和数据查看。写 SQL 或者各类查询语句是一件挺无趣的事情，使用命令行去对数据库更改之类的工作也很不方便。这个 GUI 在同一个环境下为不同的数据库提供 driver，让我们用更人性化的方式去访问和修改数据库。如果是 server 开发，可能会经常有需要查找和操作数据库的话，这个工具应该能加速不少。
+<a class="btn btn-primary btn-outline btn-xs" href="http://swifter.tips">
+  网站
+</a>
 
-> [购买链接 ($49 -> ¥339)](https://partner.lizhi.io/onevcat/tableplus)
+<a class="btn btn-primary btn-outline btn-xs" href="https://objccn.io/products/swifter-tips/">
+  中文版
+</a>
 
----
+<a class="btn btn-primary btn-outline btn-xs" href="https://leanpub.com/swifter-en">
+  英文版
+</a>
 
-## 个人工具
+<a class="btn btn-primary btn-outline btn-xs" href="http://item.jd.com/11837385.html">
+  纸质版
+</a>
 
-然后是一些个人的管理工具和日常使用的 app。
+</p>
+</li>
 
-### [Things](https://culturedcode.com/things/)
+      
+    </ul>
+    
 
-![](/assets/images/2018/things.jpg)
+  </div>
+</div>
 
-最近各种事情变多以后，生活经常会没有条理，往往有那种明明记得应该有什么事儿没做，但是就是想不起来的时候，所以需要一个类似 ToDo List 的管理类 app。Things 严格来说是一个简化版的 GTD 类 app，相比最简单的 ToDo List，它在项目分类和时间节点上做得更好。同时，对比 OmniFocus 这样的“硬派”任务管理类 app，它足够简单容易上手。macOS 版本和 iOS 版本的同步，第三方 app 的支持 (比如从邮件客户端 Spark 发送项目给 Things)，和不俗的交互及颜值，都是我选择这个 app 来作为日程管理的理由。毕竟上面记录了每天都要面对的烦心事儿，要是 app 本身再让人心烦的话，这生活就没法过了...
+    </div>
+  </section>
 
----
+  
+  
+  <section id="talks" class="home-section">
+    <div class="container">
+      
 
-### [Agenda](https://agenda.com)
 
-![](/assets/images/2018/agenda.png)
 
-作为一个和日历绑定的笔记本在使用。Things 主要是记录任务和日程，而 Agenda 主要用来记录更长一些的想法，比如会议上要做的发言，读某篇博客或者某本书的心得体会，这样的东西。对于任何不太合适扔到 Things 的内容，我都会选择放到这里备查。一开始我还担心按照日期和日历来组织笔记会有会很奇怪，但是实际用上以后发现其实也还是可以结合项目来整理，笔记的查找和复习也相当方便。像是会议准备和发言这些内容，更是可以及时归档，保持整洁。
 
-Agenda 一个比较有意思的地方，是它的收费模式。它们采用自称做[「现金奶牛」](https://medium.com/@drewmccormack/a-cash-cow-is-on-the-agenda-138a11995595)的收费方式，每次付费，你可以得到迄今为止的所有附加功能，以及未来一年的更新。即使到期以后，你也可以继续拥有已有特性以及对新系统的支持，直到下一次出现你想要续费购买的新特性时，你才需要另行付费。这种模式相当新颖，也同时激发了用户的购买欲和给了开发者持续努力的动力，很有意思。
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>近期 &amp; 预定演讲</h1>
+    
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
 
-这个 app 的 iOS 和 macOS 多端同步也非常好，总体质量不愧于 WWDC 2018 的 Design Award。如果还没有尝试过的同学，不妨一试。
+    
+    
+    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="row">
 
----
+    <h3 class="article-title" itemprop="name">
+      <a href="https://onev.cat/zh/talk/atswift2018/" itemprop="url">从 Swift 到机器学习</a>
+    </h3>
 
-### [PDF Expert](https://pdfexpert.com)
+    <div class="talk-abstract" itemprop="text">
+      
+      
+      
+    </div>
 
-![](/assets/images/2018/pdf-expert-sample.png)
+    <div class="talk-event">
+      
+        @Swift 2018
+      
+    </div>
 
-Readdle 家的 app 质量都相当有保证，除了这款老牌的 PDF 阅读器，我同时也在使用他们的[邮件 app Spark](https://sparkmailapp.com) 和[日历 app Calendars 5](https://readdle.com/calendars5)。即使以最严厉的眼光来看，他们的这些 app 几乎都挑不出什么毛病。PDF Expert 提供了优良的浏览性能和相当丰富的笔记特性，对于 PDF 效果的还原以及各种辅助阅读的功能都相当完善。我在 macOS 和 iPad 上都使用它来阅读和管理各类技术电子书籍。
+    <div class="talk-links">
+      
 
-> [优惠链接 ($79.99 -> ¥199)](https://partner.lizhi.io/onevcat/tableplus)
 
----
 
-### [Bartender](https://www.macbartender.com)
+<a class="btn btn-primary btn-outline btn-xs" href="https://onev.cat/zh/talk/atswift2018/">
+  详情
+</a>
 
-macOS 的右上状态栏一直是“兵家必争之地”。有些 app 确实利用状态栏图标做了合适的事情，让使用 app 变得更加方便。但是也难免有一些“毒瘤”要突出自己的存在感，强制性地把自己的图标放上去，还不给用户留出选项。在 app 逐渐变多后，状态栏经常过度膨胀，杂乱无章。Bartender 正是为了解决这个问题而出现的。你可以指定折叠某些不常用的状态栏图标，或者干脆永久隐藏它们。对于 MacBook 笔记本来说，屏幕宽度本来就不像 iMac 那样可供“挥霍”，所以基本在我的笔记本上这也是保持清爽的必备 app 了。
 
-> [优惠链接 ($15 -> ¥89)](https://partner.lizhi.io/onevcat/bartender)
 
----
+<a class="btn btn-primary btn-outline btn-xs" href="https://speakerdeck.com/onevcat/cong-swift-dao-ji-qi-xue-xi">
+  演示文稿
+</a>
 
-## 后记
 
-对于文中没有介绍到的很多工具，可能在数码荔枝也有特价出售，您可以[拿到优惠券](https://partner.lizhi.io/onevcat/cp)，然后去逛一逛网店看看有没有需要。
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/-4C_rLcJKKA">
+  视频
+</a>
 
-另外，如果你还有什么值得分享的工具类 app，不论是可以帮助提高开发效率的，还是帮助更好地使用 macOS 的，都欢迎留言提出~也许通过努力，我们也可以为大家争取到国内的分销商特价，以造福国内开发者。
+
+
+    </div>
+
+  </div>
+</div>
+
+    
+    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="row">
+
+    <h3 class="article-title" itemprop="name">
+      <a href="https://onev.cat/zh/talk/mdcc2016/" itemprop="url">Swift 面向协议编程与 Cocoa 框架的邂逅</a>
+    </h3>
+
+    <div class="talk-abstract" itemprop="text">
+      
+      
+      
+    </div>
+
+    <div class="talk-event">
+      
+        MDCC 2016
+      
+    </div>
+
+    <div class="talk-links">
+      
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://onev.cat/zh/talk/mdcc2016/">
+  详情
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://speakerdeck.com/onevcat/mian-xiang-xie-yi-bian-cheng-yu-cocoa-de-xie-hou">
+  演示文稿
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/dmh6D8VAnHw">
+  视频
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://onevcat.com/2016/11/pop-cocoa-1/">
+  博客文章
+</a>
+
+
+    </div>
+
+  </div>
+</div>
+
+    
+    <div class="pub-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="row">
+
+    <h3 class="article-title" itemprop="name">
+      <a href="https://onev.cat/zh/talk/atswift2016/" itemprop="url">如何打造一个让人愉快的框架</a>
+    </h3>
+
+    <div class="talk-abstract" itemprop="text">
+      
+      
+      
+    </div>
+
+    <div class="talk-event">
+      
+        @Swift 2016
+      
+    </div>
+
+    <div class="talk-links">
+      
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://onev.cat/zh/talk/atswift2016/">
+  详情
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://speakerdeck.com/onevcat/ru-he-da-zao-ge-rang-ren-yu-kuai-de-kuang-jia">
+  演示文稿
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://youtu.be/Sa7GVrhDZPM">
+  视频
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://onevcat.com/2016/01/create-framework/">
+  博客文章
+</a>
+
+
+    </div>
+
+  </div>
+</div>
+
+    
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="experience" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>职业经历</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<h3 id="2014-年-10-月-至今">2014 年 10 月 ~ 至今</h3>
+
+<p><a href="https://line.me" target="_blank">LINE</a> 开发中心 高级软件工程师 (日本 东京)</p>
+
+<ul>
+<li>iOS 应用及框架开发</li>
+<li>项目组技术负责人</li>
+<li>Swift 布道</li>
+</ul>
+
+<h3 id="2012-年-10-月-2014-年-9-月">2012 年 10 月 ~ 2014 年 9 月</h3>
+
+<p><a href="https://www.kayac.com/en" target="_blank">Kayac Inc.</a> Unity 开发工程师 / 技术主管 (日本 横滨)</p>
+
+<ul>
+<li>Unity 游戏开发及优化</li>
+<li>新入职员工技能培训及表现评价</li>
+</ul>
+
+<h3 id="2011-年-3-月-2012-年-7-月">2011 年 3 月 ~ 2012 年 7 月</h3>
+
+<p>锐徳无限 (Red Infinity) 软件工程师 (中国 北京)</p>
+
+<ul>
+<li>作为初创公司员工实习</li>
+<li>iOS 游戏开发责任人</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="contact" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>联系</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    <ul class="fa-ul">
+
+      
+      <li>
+        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+        <span><a href="mailto:onev@onevcat.com">onev@onevcat.com</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fa fa-lock fa-2x" aria-hidden="true"></i>
+        <span>
+          <a href="https://keybase.io/onevcat" target="_blank">@onevcat</a> on Keybase.
+        </span>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span>日本東京都新宿区新宿 4-1-6　JR 新宿ミライナタワー 23 階，160-0022，03-4316-2000</span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fa fa-clock-o fa-2x" aria-hidden="true"></i>
+        <span>预约会面请先邮件联系</span>
+      </li>
+      
+
+    </ul>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Wei Wang &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/swift.min.js"></script>
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/objectivec.min.js"></script>
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

@@ -4,10 +4,10 @@ title: HashSet初探
 date: 2019-03-15 22:30:00.000000000 +09:00
 ---
 
-####描述
+#### 描述
 最近在刷leetCode为找工作做准备，刚开始，打算每天一道，顺便写写学习笔记。
 
-####题目
+#### 题目
 ```
     Given a string, find the length of the longest substring without repeating characters.
     
@@ -68,7 +68,7 @@ class Solution {
     }
 }
 ```
-####问题
+#### 问题s深入
 
 目的是达到了，但是仔细看，这次代码的实现比较繁琐，使用了三个for循环判断两个字母之间有无重复字符。
 在查看答案之后发现，本人对java的精髓还未曾了解。最初实现的代码，犹如使用java语言编写c语言程序一般。思想完全没有想到使用java封装类便可实现有无重复字符的判断。正如答案所示方案：
@@ -108,7 +108,7 @@ HashSet是一个没有重复元素的集合，它是由HashMap实现的，不保
 ```
     Set s = Collections.synchronizedSet(new HashSet(...))
    ```
-## HashSet构造函数
+#### hashSet构造函数
 
 ```
 // 默认构造函数
@@ -194,7 +194,7 @@ true
 
 #### Contain源码解析
 
-![源码解析](https://img-blog.csdn.net/20181012112805367?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIwMDk4OTE5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 这是由于String对象重写了hashCode和equal方法，只要String的value相等，则返回的hashcode相等，equal返回true。
 而新建的Dog类没有重写hashCode和equal方法，使用的是父类Object的方法，创建不同的对象的hashcode不同，equals返回false,所以不会满足上图源码的if (e.hash == hash &&((k = e.key) == key || (key != null && key.equals(k))))条件，所以可以使用color属性重写hashcode和equals方法，调用contains返回true
 

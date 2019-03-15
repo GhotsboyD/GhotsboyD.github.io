@@ -1,0 +1,345 @@
+---
+layout: post
+title: HashSet初探
+date: 2019-03-15 22:30:00.000000000 +09:00
+---
+
+####描述
+最近在刷leetCode为找工作做准备，刚开始，打算每天一道，顺便写写学习笔记。
+
+####题目
+```
+    Given a string, find the length of the longest substring without repeating characters.
+    
+    Example 1:
+    
+    Input: "abcabcbb"
+    Output: 3 
+    Explanation: The answer is "abc", with the length of 3. 
+    Example 2:
+    
+    Input: "bbbbb"
+    Output: 1
+    Explanation: The answer is "b", with the length of 1.
+    Example 3:
+    
+    Input: "pwwkew"
+    Output: 3
+    Explanation: The answer is "wke", with the length of 3. 
+                 Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+  
+```
+上题为leetcode题目，算是一个比较简单的题目，本人使用java代码的最初实现如下：
+
+```
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int i = 0;
+        int j = 0;
+        int max_num = 1;
+        int num = 1;
+        int flag = 0;
+        if(s.length() ==0)
+            return 0;
+        for(;i<s.length();i++)
+        {
+            num = 1;
+            for(j=i+1;j<s.length();j++)
+            {
+                for(int k =j-1;k>=i;k--){
+                    
+                
+                    if(s.charAt(j) !=s.charAt(k))
+                      flag = 0; 
+                    else{
+                        flag = 1;
+                        break;  
+                        }
+                }
+                if(flag == 0)
+                    num++;
+                if(flag == 1)
+                    break;
+            }
+            if(num>max_num)
+                max_num=num;
+        }
+        return max_num;
+    }
+}
+```
+####问题
+
+目的是达到了，但是仔细看，这次代码的实现比较繁琐，使用了三个for循环判断两个字母之间有无重复字符。
+在查看答案之后发现，本人对java的精髓还未曾了解。最初实现的代码，犹如使用java语言编写c语言程序一般。思想完全没有想到使用java封装类便可实现有无重复字符的判断。正如答案所示方案：
+
+```
+public class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length();
+        int ans = 0;
+        for (int i = 0; i < n; i++)
+            for (int j = i + 1; j <= n; j++)
+                if (allUnique(s, i, j)) ans = Math.max(ans, j - i);
+        return ans;
+    }
+
+    public boolean allUnique(String s, int start, int end) {
+        Set<Character> set = new HashSet<>();
+        for (int i = start; i < end; i++) {
+            Character ch = s.charAt(i);
+            if (set.contains(ch)) return false;
+            set.add(ch);
+        }
+        return true;
+    }
+}
+```
+官方给出的答案提倡使用HashSet判断String内有无重复字符。
+对于字符串，从第0个字符开始一直到最后一个字符，依次扩大字符范围，找出分割字符串中没有重复字符串的最大长度。
+官方给出的标准答案与本人写的答案只有两个for循环中的代码有异。
+而在时间复杂度上并无差异。
+进而了解了一下HashSet函数的用法以及实现。
+
+
+#### 知识点
+HashSet是一个没有重复元素的集合，它是由HashMap实现的，不保证元素的顺序，并且HashSet运行使用null元素。
+注：HashSet是非同步的，如果多个线程同时访问一个HashSet，而其中至少一个线程修改了该set，那么他必须保持对外同步，通常是通过对自然封装该 set 的对象执行同步操作来完成的。如果不存在这样的对象，则应该使用 Collections.synchronizedSet 方法来“包装” set。最好在创建时完成这一操作，以防止对该 set 进行意外的不同步访问：
+```
+    Set s = Collections.synchronizedSet(new HashSet(...))
+   ```
+## HashSet构造函数
+
+```
+// 默认构造函数
+public HashSet() 
+
+// 带集合的构造函数
+public HashSet(Collection<? extends E> c) 
+
+// 指定HashSet初始容量和加载因子的构造函数
+public HashSet(int initialCapacity, float loadFactor) 
+
+// 指定HashSet初始容量的构造函数
+public HashSet(int initialCapacity) 
+
+// 指定HashSet初始容量和加载因子的构造函数,dummy没有任何作用
+HashSet(int initialCapacity, float loadFactor, boolean dummy) 
+```
+
+#### HashSet主要API
+
+```
+boolean         add(E object)  #向HashSet中添加对象、HashSet中已存在的对象便不会添加进入
+void            clear()				 #清空所有HashSet中的对象
+Object          clone()				 #克隆一个相同的HashSet对象
+boolean         contains(Object object)     
+			  #判断HashSet中是否已存在该对象，若存在则返回true，否则返回false
+boolean         isEmpty()			#判断是否为空
+Iterator<E>     iterator()		#提供了一个访问HashSet的方法，迭代器
+										#若想要依次访问HashSet中的方法，则需要将HashSet存入迭代器中。
+Iterator iter = set.iterator();
+while(iter.hasNext())
+{
+	string value = (String)iter.next();
+	System.out.println(value);
+}
+boolean         remove(Object object) 					 #将对象从HashSet中移除
+int             size()									#判断HashSet中有多少个对象
+```
+上述API中需要注意的是contains方法
+在日常编程中通常会出现contains方法比较值的问题。
+问题如下：
+在下列代码中，往HashSet中加入两个相同的String类型的值时，发现字符串在HashSet中只有一个。这属于正常情况。但是当往HashSet中重复添加一个自定义对象时，发现HashSet并没有实现查重的功能。
+
+```
+class Dog{
+
+String color;
+public Dog(String s){
+    color = s;
+}   
+}
+
+public class SetAndHashCode {
+
+public static void main(String[] args) {
+    HashSet<Dog> dogSet = new HashSet<Dog>();
+    boolean resultq;
+    dogSet.add(new Dog("we have white"));
+    System.out.println("We have " + dogSet.size() + " white dogs!");
+    resultq = dogSet.contains(new Dog("we have white"));
+    System.out.println(resultq);
+       
+    HashSet<String> books = new HashSet<String>();    
+    //添加一个字符串对象  
+    books.add(new String("Struts2权威指南"));  
+    books.add(new String("Struts2权威指南"));
+    boolean result = books.contains(new String("Struts2权威指南")); 
+    System.out.println("We have " + books.size() + " books!");         
+    System.out.println(result);          
+    //下面输出看到集合只有一个元素  
+    System.out.println(books);    
+}
+}
+执行结果是：
+**We have 2 white dogs!
+false
+We have 1 books!
+true
+[Struts2权威指南]**
+
+
+```
+
+#### Contain源码解析
+
+![源码解析](https://img-blog.csdn.net/20181012112805367?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIwMDk4OTE5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+这是由于String对象重写了hashCode和equal方法，只要String的value相等，则返回的hashcode相等，equal返回true。
+而新建的Dog类没有重写hashCode和equal方法，使用的是父类Object的方法，创建不同的对象的hashcode不同，equals返回false,所以不会满足上图源码的if (e.hash == hash &&((k = e.key) == key || (key != null && key.equals(k))))条件，所以可以使用color属性重写hashcode和equals方法，调用contains返回true
+
+
+```
+package java.util;
+
+public class HashSet<E>
+    extends AbstractSet<E>
+    implements Set<E>, Cloneable, java.io.Serializable
+{
+    static final long serialVersionUID = -5024744406713321676L;
+
+    // HashSet是通过map(HashMap对象)保存内容的
+    private transient HashMap<E,Object> map;
+
+    // PRESENT是向map中插入key-value对应的value
+    // 因为HashSet中只需要用到key，而HashMap是key-value键值对；
+    // 所以，向map中添加键值对时，键值对的值固定是PRESENT
+    private static final Object PRESENT = new Object();
+
+    // 默认构造函数
+    public HashSet() {
+        // 调用HashMap的默认构造函数，创建map
+        map = new HashMap<E,Object>();
+    }
+
+    // 带集合的构造函数
+    public HashSet(Collection<? extends E> c) {
+        // 创建map。
+        // 为什么要调用Math.max((int) (c.size()/.75f) + 1, 16)，从 (c.size()/.75f) + 1 和 16 中选择一个比较大的树呢？        
+        // 首先，说明(c.size()/.75f) + 1
+        //   因为从HashMap的效率(时间成本和空间成本)考虑，HashMap的加载因子是0.75。
+        //   当HashMap的“阈值”(阈值=HashMap总的大小*加载因子) < “HashMap实际大小”时，
+        //   就需要将HashMap的容量翻倍。
+        //   所以，(c.size()/.75f) + 1 计算出来的正好是总的空间大小。
+        // 接下来，说明为什么是 16 。
+        //   HashMap的总的大小，必须是2的指数倍。若创建HashMap时，指定的大小不是2的指数倍；
+        //   HashMap的构造函数中也会重新计算，找出比“指定大小”大的最小的2的指数倍的数。
+        //   所以，这里指定为16是从性能考虑。避免重复计算。
+        map = new HashMap<E,Object>(Math.max((int) (c.size()/.75f) + 1, 16));
+        // 将集合(c)中的全部元素添加到HashSet中
+        addAll(c);
+    }
+
+    // 指定HashSet初始容量和加载因子的构造函数
+    public HashSet(int initialCapacity, float loadFactor) {
+        map = new HashMap<E,Object>(initialCapacity, loadFactor);
+    }
+
+    // 指定HashSet初始容量的构造函数
+    public HashSet(int initialCapacity) {
+        map = new HashMap<E,Object>(initialCapacity);
+    }
+
+    HashSet(int initialCapacity, float loadFactor, boolean dummy) {
+        map = new LinkedHashMap<E,Object>(initialCapacity, loadFactor);
+    }
+
+    // 返回HashSet的迭代器
+    public Iterator<E> iterator() {
+        // 实际上返回的是HashMap的“key集合的迭代器”
+        return map.keySet().iterator();
+    }
+
+    public int size() {
+        return map.size();
+    }
+
+    public boolean isEmpty() {
+        return map.isEmpty();
+    }
+
+    public boolean contains(Object o) {
+        return map.containsKey(o);
+    }
+
+    // 将元素(e)添加到HashSet中
+    public boolean add(E e) {
+        return map.put(e, PRESENT)==null;
+    }
+
+    // 删除HashSet中的元素(o)
+    public boolean remove(Object o) {
+        return map.remove(o)==PRESENT;
+    }
+
+    public void clear() {
+        map.clear();
+    }
+
+    // 克隆一个HashSet，并返回Object对象
+    public Object clone() {
+        try {
+            HashSet<E> newSet = (HashSet<E>) super.clone();
+            newSet.map = (HashMap<E, Object>) map.clone();
+            return newSet;
+        } catch (CloneNotSupportedException e) {
+            throw new InternalError();
+        }
+    }
+
+    // java.io.Serializable的写入函数
+    // 将HashSet的“总的容量，加载因子，实际容量，所有的元素”都写入到输出流中
+    private void writeObject(java.io.ObjectOutputStream s)
+        throws java.io.IOException {
+        // Write out any hidden serialization magic
+        s.defaultWriteObject();
+
+        // Write out HashMap capacity and load factor
+        s.writeInt(map.capacity());
+        s.writeFloat(map.loadFactor());
+
+        // Write out size
+        s.writeInt(map.size());
+
+        // Write out all elements in the proper order.
+        for (Iterator i=map.keySet().iterator(); i.hasNext(); )
+            s.writeObject(i.next());
+    }
+
+
+    // java.io.Serializable的读取函数
+    // 将HashSet的“总的容量，加载因子，实际容量，所有的元素”依次读出
+    private void readObject(java.io.ObjectInputStream s)
+        throws java.io.IOException, ClassNotFoundException {
+        // Read in any hidden serialization magic
+        s.defaultReadObject();
+
+        // Read in HashMap capacity and load factor and create backing HashMap
+        int capacity = s.readInt();
+        float loadFactor = s.readFloat();
+        map = (((HashSet)this) instanceof LinkedHashSet ?
+               new LinkedHashMap<E,Object>(capacity, loadFactor) :
+               new HashMap<E,Object>(capacity, loadFactor));
+
+        // Read in size
+        int size = s.readInt();
+
+        // Read in all elements in the proper order.
+        for (int i=0; i<size; i++) {
+            E e = (E) s.readObject();
+            map.put(e, PRESENT);
+        }
+    }
+}
+```
+说明： HashSet的代码实际上非常简单，通过上面的注释应该很能够看懂。它是通过HashMap实现的，若对HashSet的理解有困难，建议先学习以下HashMap；学完HashMap之后，在学习HashSet就非常容易了
